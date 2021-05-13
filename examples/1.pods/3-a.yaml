@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+  labels:
+    app: mypod
+spec:
+  containers:
+  - name: mycontainer
+    image: ichte/swarmtest:php
+    ports:
+    - containerPort: 8085
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "100m"
+
+    livenessProbe:
+      httpGet:
+        path: /healthycheck
+        port: 8085
+      initialDelaySeconds: 10
+      periodSeconds: 10
