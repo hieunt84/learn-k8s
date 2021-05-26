@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nginx
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: nginx
@@ -12,9 +12,14 @@ spec:
       labels:
         app: nginx
     spec:
+      volumes:
+        - name: cert-volume
+          secret:
+            secretName: "secret-nginx-cert"
+            
       containers:
       - name: nginx
-        image: happyit/k8s:nginx
+        image: happyit/k8s:nginx-v2
         imagePullPolicy: "Always"
         resources:
           limits:
@@ -22,6 +27,10 @@ spec:
             cpu: "100m"
         ports:
         - containerPort: 80
+        - containerPort: 443
+        volumeMounts:
+          - mountPath: "/certs"
+            name: cert-volume
 ---
 apiVersion: v1
 kind: Service
@@ -36,6 +45,11 @@ spec:
     name: http
     nodePort: 31080   # cổng NODE ánh xạ vào cổng dịch vụ (chỉ chọn 30000-32767)
 
+  - port: 443
+    targetPort: 443
+    protocol: TCP
+    name: https
+    nodePort: 31443
   # Chú ý đúng với Label của POD tại Deployment
   selector:
     app: nginx
