@@ -1,19 +1,18 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: myingress
-  labels:
-    name: myingress
-  namespace: ingress-controller
+  annotations:
+    kubernetes.io/ingress.class: haproxy
+  name: echoserver
 spec:
   rules:
-  - host: xuanthulab.test
+  - host: echoserver.test
     http:
       paths:
       - pathType: Prefix
-        path: "/"
         backend:
           service:
-            name: myapp
+            name: echoserver
             port: 
-              number: 80
+              number: 8080
+        path: /

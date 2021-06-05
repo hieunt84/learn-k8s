@@ -1,17 +1,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
+  annotations:
+    kubernetes.io/ingress.class: haproxy
   name: myingress
-  labels:
-    name: myingress
-  namespace: ingress-controller
+#  namespace: ingress-controller
 spec:
   rules:
-  - host: xuanthulab.test
+  - host: happyit.test
     http:
       paths:
       - pathType: Prefix
-        path: "/"
+        path: /
         backend:
           service:
             name: myapp
