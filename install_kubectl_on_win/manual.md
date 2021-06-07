@@ -1,4 +1,8 @@
 ## setup kubectl on windows
+https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
+
+---
+## Fix error
 I had this problem, solved it by setting the KUBECONFIG environmental variable like:
 $env:KUBECONFIG="C:\Users\your_user_name\.kube\config"
 $env:KUBECONFIG="C:\Users\HIT\.kube\config"
