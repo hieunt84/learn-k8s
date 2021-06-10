@@ -1,3 +1,4 @@
 ## learn-k8s
-- Ref : https://xuanthulab.net/tim-hieu-ve-pod-va-node-trong-kubernetes.html#pods
+- Ref: https://blogd.net/kubernetes/
+- Ref: https://xuanthulab.net/gioi-thieu-va-cai-dat-kubernetes-cluster.html
 - Ref: https://cuongquach.com/headless-service-trong-kubernetes-la-gi.html
