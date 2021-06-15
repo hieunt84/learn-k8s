@@ -4,15 +4,12 @@ Ref:
 - https://viblo.asia/p/helm-la-gi-no-co-lien-quan-gi-den-series-nay-Do754oAQlM6#_deploy-example-project-chart-8
 - https://helm.sh/docs/intro/quickstart/
 
-## Deploy app from repo
-1. add hub/repository
+## Deploy app wordpress from repo
 - có nhiều repo trên khắp thế giới
-
-ref: https://artifacthub.io/packages/helm/artifact-hub/artifact-hub
-helm repo add artifact-hub https://artifacthub.github.io/hub/chart
-helm install hub artifact-hub/artifact-hub
-
-helm repo add stable https://charts.helm.sh/stable
+1. add hub/repository
+helm repo add bitnami https://charts.bitnami.com/bitnami
+or
+helm repo add stable https://kubernetes-charts.storage.googleapis.com/
 
 2. check repo
 helm repo ls
@@ -29,3 +26,17 @@ helm status happy-panda
 
 ## Check app đã deploy
 helm ls
+
+Một số câu hỏi
+1/Triển khai app bằng helm khác gì so với truyền thống
+
+6. Enable ingress on minikube
+ref https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/
+minikube addons enable ingress
+kubectl get ns
+
+7. Modified hosts file
+192.168.99.100 happyit.test
+
+8. Testing
+curl happyit.test
