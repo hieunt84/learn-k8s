@@ -1,9 +1,10 @@
 ## Deploy application wordpress from repo bitnami
 1. search wordpress on hub
+from website: https://artifacthub.io/packages/helm/bitnami/wordpress
 helm search hub wordpress
 
 2. add hub/repository
-helm repo add bitnami https
+helm repo add bitnami https://charts.bitnami.com/bitnami
 
 3. check repo
 helm repo ls
