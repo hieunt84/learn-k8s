@@ -22,7 +22,7 @@
     Ref: https://rancher.com/products/rancher/2.5
 
 ### Get started with Rancher in two easy steps
-   Ref: https://rancher.com/quick-start/
+    Ref: https://rancher.com/quick-start/
     
 ### setup rancher v2.4.8 on vm using docker
     docker run -d --restart=unless-stopped \
