@@ -1,13 +1,17 @@
-### Rancher là gì?
-    -là phần mềm mã nguồn mở cung cấp và quản lý hạ tầng hiện đại để triển khai các ứng dụng hiện đại.
-    -Rancher is open source software that combines everything an organization needs to adopt and run containers in production. Built on Kubernetes, Rancher makes it easy for DevOps teams to test, deploy and manage their applications.
-    -deploy app containers for production and tools for DevOps team.
-### Công nghệ mà Rancher tích hợp và combine:
-    -Hỗ trợ/tích hợp docker để cung cấp container
-    -Hỗ trợ/tích hợp K8s, dockerswarm,... để điều phối về container
-    -Hỗ trợ/tích hợp terraform để provision infa
-    -Hỗ trợ/tích hợp promethus and granfana để moinitor and arlerting.    
+### What is Rancher ?
+    -Rancher is open source software that combines everything an organization needs to adopt and run containers in production. 
+    -Built on Kubernetes, Rancher makes it easy for DevOps teams to test, deploy and manage their applications.
 
+### Rancher integrated and combine opensource technology:
+    -Docker run container.
+    -K8s ochestation container.
+    -Terraform provision infastructure.
+    -Promethus and Grafana moinitor and arlert.
+    -Jenkins buil CI/CD.
+    -...    
+
+### Overview Rancher
+    
 ### Tại sao dùng Rancher
     -Rancher là công cụ giúp quản lý môi trường docker rất hiệu quả, mọi thứ sẽ được quản lý qua giao diện web.
     -Làm cho công việc sysadmin/devops trở nên dễ dàng trong việc triển khai và quản lý infastructure.
