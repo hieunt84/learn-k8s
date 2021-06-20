@@ -11,7 +11,7 @@
     -...    
 
 ### Overview Rancher
-<p align="center"><img src="rancher/images/overview-ancher.PNG" /></p>
+<p align="center"><img src="https://github.com/hieunt84/learn-k8s/blob/master/rancher/images/overview-ancher.PNG" /></p>
     
 ### Tại sao dùng Rancher
     -Rancher là công cụ giúp quản lý môi trường docker rất hiệu quả, mọi thứ sẽ được quản lý qua giao diện web.
