@@ -1,6 +1,6 @@
-### using app catalog rancher, using repo rancher official
+### solution1 uses official app catalog rancher 
+    value.yaml
+      Default
 
-### value.yaml
-Default
-
-### Accout quản trị
+### solution 2 uses helm and operator
+    Ref: example 14

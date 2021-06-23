@@ -1,10 +1,11 @@
+# learn-k8s
 ### Goal
     - setup k8s
-    - administration k8s
-      - deploy app
-      - monitor
-      - backup
-      - troubleshoot
+    - administer k8s with k8s
+    - deploy app with helm
+    - monitor & alert with prometheus and grafana
+    - backup with rancher
+    - Rancher combine everything.
 
 ### Ref
     1.Tutorial1:
