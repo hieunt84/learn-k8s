@@ -2,7 +2,7 @@
 
 ### value.yaml
 Name	            Description	                                    Value
-service.type	    WordPress service type	                        ClusterIP
+service.type	    Jenkins service type	                        ClusterIP
 ingress.enabled	    Enable ingress record generation for WordPress	true
 ingress.hostname	Default host for the ingress record	            jenkins.local
 
