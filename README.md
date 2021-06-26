@@ -1,7 +1,7 @@
 # learn-k8s
 ### Goal
     - setup k8s
-    - administer k8s with k8s
+    - administer k8s with kubectl
     - deploy app with helm
     - monitor & alert with prometheus and grafana
     - backup with rancher
