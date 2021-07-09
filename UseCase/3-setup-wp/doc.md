@@ -1,4 +1,5 @@
-### using app catalog rancher, using repo bitnami
+### Intro 
+    using app catalog rancher, using repo bitnami
 
 ### value.yaml
     Name	            Description	                                    Value
