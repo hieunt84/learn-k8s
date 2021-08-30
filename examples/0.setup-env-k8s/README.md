@@ -20,3 +20,6 @@ Deploy k8s on vagrant and shell scripts
 - local/workstation
 - Developing on vagrant
 - Testing on vagrant
+
+### Setup and manage with rancher
+
