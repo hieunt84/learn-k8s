@@ -1,5 +1,5 @@
-Có nhiều cách setup k8s
-1.Setup adm
+Có nhiều cách setup k8s:
+1. Setup adm
 Deploy k8s on vagrant and shell scripts
 
 REF
@@ -13,7 +13,7 @@ ENVIRONMENT
 - Developing on vagrant
 - Testing on vagrant
 
-2.Setup minikube
+2. Setup minikube
 ENVIRONMENT
 - local/workstation
 - Developing on vagrant
