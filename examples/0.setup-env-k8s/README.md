@@ -1,20 +1,22 @@
 Có nhiều cách setup k8s:
+### Setup adm
 1. Setup adm
 Deploy k8s on vagrant and shell scripts
 
-REF
+2. Ref
 - https://blogd.net/kubernetes/cai-dat-kubernetes-cluster/
 - https://xuanthulab.net/gioi-thieu-va-cai-dat-kubernetes-cluster.html#worker
 - https://cuongquach.com/cai-dat-kubernetes-cluster-voi-kubeadm.html
 
-ENVIRONMENT
+3. ENVIRONMENT
 - onprimes/cloud
 - production
 - Developing on vagrant
 - Testing on vagrant
 
-2. Setup minikube
-ENVIRONMENT
+### Setup minikube
+1. Setup minikube
+2. ENVIRONMENT
 - local/workstation
 - Developing on vagrant
 - Testing on vagrant
